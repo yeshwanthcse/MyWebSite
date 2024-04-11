@@ -1,2 +1,0 @@
-This is new file f1
-Adding new line in f1 using main branch
