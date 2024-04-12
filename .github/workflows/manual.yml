@@ -1,0 +1,16 @@
+name: My Demo Workflow
+on:
+ workflow_dispatch:
+jobs:
+ build-job:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v3
+   - name: Run a one-line script
+    run: echo Hello, world!
+   - name: Run a multi-line script
+    run: |
+     echo "FIRST.TXT"
+     cat first.txt
+     echo "SECOND.TXT"
+     cat second.txt
